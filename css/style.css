@@ -15,7 +15,7 @@ a {
   color: #4586FF; }
   a:hover {
     text-decoration: none;
-    color: #4586FF; }
+    color: #E78F24; }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5,
   z-index: 3; }
   @media screen and (max-width: 991px) {
     .ftco-navbar-light {
-      background: #000 !important;
+      background: #000 !important; //*black nav*//
       top: 0;
       position: relative; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
@@ -554,6 +554,9 @@ textarea {
   background-color: #eeeeee;
 }
 
+
+
+
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -630,3 +633,203 @@ textarea {
     margin: 0 0 30px;
   }
 }
+
+//*Close Screen*//
+.portfolio-modal .modal-content {
+  padding: 100px 0;
+  min-height: 100%;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+.portfolio-modal .close-modal .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background-color: #222222;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* Safari and Chrome */
+  z-index: 1051;
+}
+
+.portfolio-modal .close-modal .lr .rl {
+  height: 75px;
+  width: 1px;
+  background-color: #222222;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari and Chrome */
+  z-index: 1052;
+}
+
+.portfolio-modal .modal-backdrop {
+  opacity: 0;
+  display: none;
+}
+
+::-moz-selection {
+  text-shadow: none;
+  background: rgba(231, 143, 36, 0.5);
+}
+
+::selection {
+  text-shadow: none;
+  background: rgba(231, 143, 36, 0.5);
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+
+//*Pagination*//
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: #000;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    background-color: #eeeeee;
+}
+
+ul.pagination li a.active {
+    background-color: #E78F24;
+    color: #000;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: rgba(231, 143, 36, 0.5) ;}
+
+//* Image Grid*//
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ul.rig {
+    list-style: none;
+    font-size: 0px;
+    margin-left: -2.5%;
+}
+
+ul.rig li{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 0 2.5% 2.5%;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ul.rig li img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+}
+
+ul.rig li h3 {
+    margin: 0 0 5px;
+}
+
+ul.rig li p {
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+ul.rig.columns-3 li {
+    width: 30.83%;
+}
+
+@media (max-width: 480px) {
+    ul.grid-nav li {
+        display: block;
+        margin: 0 0 5px;
+    }
+    
+    ul.grid-nav li a {
+        display: block;
+    }
+    
+    ul.rig {
+        margin-left: 0;
+    }
+    
+    ul.rig li {
+        width: 100% !important;
+        margin: 0 0 20px;
+    }
+
+
